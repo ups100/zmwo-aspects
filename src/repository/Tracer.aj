@@ -9,7 +9,7 @@ import java.util.concurrent.LinkedTransferQueue;
 import org.aspectj.lang.reflect.MethodSignature;
 
 public aspect Tracer {
-	Deque<Long> times = new ArrayDeque<Long>();
+	/*Deque<Long> times = new ArrayDeque<Long>();
 	pointcut  wywolanie() :
 		execution(* *.*(..)) && !within(Tracer)
 		&& (target(Document) || target(Employee) || target(Main) || target(Project) || target(ProjectExporter) || target(Repository)
@@ -37,5 +37,5 @@ public aspect Tracer {
 		Long time = Calendar.getInstance().getTimeInMillis() - times.pollLast();
 		System.out.println("Call for: " + thisJoinPoint.getTarget().getClass() + " Method: " + thisJoinPoint.getSignature().getName() +
 				" Returned: " + ret + " Time: " + time);
-	}
+	}*/
 }
